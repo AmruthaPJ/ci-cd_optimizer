@@ -41,7 +41,7 @@ jobs:
 
       - name: Install Green-Ops dependencies
         run: |
-          pip install pandas numpy scikit-learn xgboost requests scipy transformers torch
+          pip install pandas numpy scikit-learn xgboost requests scipy transformers torch python-dotenv
 
       - name: Run Green-Ops full pipeline
         id: pipeline
