@@ -5,3 +5,5 @@ pandas
 openai
 requests
 PyGithub
+flask
+python-dotenv
