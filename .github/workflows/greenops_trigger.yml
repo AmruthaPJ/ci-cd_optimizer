@@ -54,9 +54,7 @@ jobs:
         run: |
           python github_ci_integration.py
           python -c "
-          from graphcodebert_embeddings import GraphCodeBERTEmbedder
-          from llm_impact_analyzer import LLMImpactAnalyzer
-          from xgboost_gatekeeper import run_gatekeeper_pipeline
+          from src.ml.gatekeeper import run_gatekeeper_pipeline
           from carbon_aware_scheduler import CarbonAwareScheduler
           import json, numpy as np
           # Load artifacts from CI integration step
