@@ -31,6 +31,10 @@ Usage:
     schedule  = scheduler.schedule(pruning_decision, test_operation_counts)
 """
 
+import os
+import json
+import logging
+import sqlite3
 from src import config
 from src.carbon_api_client import CarbonAPIClient
 from dataclasses import dataclass, field, asdict
